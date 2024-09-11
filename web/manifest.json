@@ -1,6 +1,6 @@
 {
-    "name": "waterloo_map_test",
-    "short_name": "waterloo_map_test",
+    "name": "waterloo_test_map",
+    "short_name": "waterloo_test_map",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

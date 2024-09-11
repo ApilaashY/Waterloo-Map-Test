@@ -1,4 +1,4 @@
-# waterloo_map_test
+# waterloo_test_map
 
 A new Flutter project.
 

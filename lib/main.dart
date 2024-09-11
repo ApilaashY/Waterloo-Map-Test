@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'modules/routes.dart' as routes;
 
+final List<String> buildings = [];
+
 void main() {
   runApp(const MyApp());
 }

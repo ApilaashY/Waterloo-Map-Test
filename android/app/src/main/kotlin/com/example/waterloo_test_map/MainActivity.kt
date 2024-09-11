@@ -1,4 +1,4 @@
-package com.example.waterloo_map_test
+package com.example.waterloo_test_map
 
 import io.flutter.embedding.android.FlutterActivity
 
