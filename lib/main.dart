@@ -131,6 +131,16 @@ class _HomeState extends State<Home> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
+              "${buildings.length - gameBuildings.length + 1}/${buildings.length} Completed",
+              style: TextStyle(fontSize: 22),
+            ),
+            SizedBox(height: 30),
+            Text(
+              "${gameBuildings.length - 1}/${buildings.length} Left",
+              style: TextStyle(fontSize: 22),
+            ),
+            SizedBox(height: 30),
+            Text(
               "Building: ${(buildingIndex >= 0) ? gameBuildings[buildingIndex][0] : ""}",
               style: const TextStyle(fontSize: 24),
             ),
@@ -158,10 +168,7 @@ class _HomeState extends State<Home> {
                   context: context,
                   builder: (context) => AlertDialog.adaptive(
                     title: Text(
-                      "Building: " +
-                          ((buildingIndex >= 0)
-                              ? gameBuildings[buildingIndex][0]
-                              : ""),
+                      "Building: ${(buildingIndex >= 0) ? "${gameBuildings[buildingIndex][0]} - ${gameBuildings[buildingIndex][1]}" : ""}",
                     ),
                   ),
                 );
